@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Api1 from './Components/Api1';
+import Api2 from './Components/Api2';
+import Api3 from './Components/Api3';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+export default function App() {
+  return(
+    <div>
+        <h1 className="text-center bg-warning text-white">First Api Fatch </h1>
+      <Api1/>
+         <h1 className="text-center bg-success text-white">Second Api Fatch </h1>
+      <Api2/>
+        <h1 className="text-center bg-success text-white">Third Api Fatch </h1>
+      <Api3/>
+
     </div>
-  );
+  )
 }
-
-export default App;
